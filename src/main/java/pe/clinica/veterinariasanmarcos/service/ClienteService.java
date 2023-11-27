@@ -1,2 +1,22 @@
-package pe.clinica.veterinariasanmarcos.service;public class ClienteService {
+package pe.clinica.veterinariasanmarcos.service;
+
+import org.springframework.stereotype.Service;
+import pe.clinica.veterinariasanmarcos.Entity.Cliente;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public interface ClienteService {
+
+    public List<Cliente> listarClientes();
+
+    public Optional<Cliente> listarClientePorId(Integer id);
+
+    public void guardar(Cliente cliente);
+
+    public void actualizar( Integer id, Cliente cliente);
+
+    public void eliminar(Integer id);
+
 }
