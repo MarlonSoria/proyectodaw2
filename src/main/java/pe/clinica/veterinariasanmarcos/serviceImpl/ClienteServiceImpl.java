@@ -29,12 +29,18 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public void guardar(Cliente cliente) {
         cliRepo.save(cliente);
-
     }
 
     @Override
     public void actualizar(Integer id, Cliente cliente) {
-        cliRepo.findById(id).orElse(null);
+        Cliente object = cliRepo.findById(id).get();
+        if (object != null) {
+            object.setNombre(cliente.getNombre());
+            object.setApellidos(cliente.getApellidos());
+            object.setCelular(cliente.getCelular());
+            object.setEmail(cliente.getEmail());
+            cliRepo.save(object);
+        }
     }
 
     @Override
