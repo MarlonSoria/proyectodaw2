@@ -9,7 +9,7 @@ import java.util.Optional;
 @Service
 public interface ClienteService {
 
-    public List<Cliente> listarClientes();
+    public List<Cliente> listarCliente();
 
     public Optional<Cliente> listarClientePorId(Integer id);
 

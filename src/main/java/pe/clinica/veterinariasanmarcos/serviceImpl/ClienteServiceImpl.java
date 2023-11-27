@@ -17,7 +17,7 @@ public class ClienteServiceImpl implements ClienteService {
 
 
     @Override
-    public List<Cliente> listarClientes() {
+    public List<Cliente> listarCliente() {
         return cliRepo.findAll();
     }
 

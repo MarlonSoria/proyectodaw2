@@ -16,7 +16,7 @@ public class ClienteController {
 
     @GetMapping("/clientes")
     public List<Cliente> listaClientes(){
-        return clienteService.listarClientes();
+        return clienteService.listarCliente();
     }
 
     @GetMapping("/clientes/{id}")
