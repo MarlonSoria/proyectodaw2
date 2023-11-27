@@ -17,7 +17,7 @@ public class HistorialClinico {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_historialclinico;
+    private Integer id_historialclinico;
 
     @Column(name = "descripcion")
     private String descripcion;

@@ -17,7 +17,7 @@ public class Veterinario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_veterinario;
+    private Integer id_veterinario;
 
     @Column(name = "nombre")
     private String nombre;

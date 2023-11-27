@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class DetalleBol {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_detallebol;
+    private Integer id_detallebol;
 
     @Column(name = "total")
     private double total;

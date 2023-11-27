@@ -16,7 +16,7 @@ import java.util.Date;
 public class Cita {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_cita;
+    private Integer id_cita;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(value = TemporalType.DATE)

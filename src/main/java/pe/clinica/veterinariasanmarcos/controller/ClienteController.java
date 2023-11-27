@@ -1,6 +1,7 @@
 package pe.clinica.veterinariasanmarcos.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import pe.clinica.veterinariasanmarcos.Entity.Cliente;
 import pe.clinica.veterinariasanmarcos.service.ClienteService;
@@ -8,6 +9,7 @@ import pe.clinica.veterinariasanmarcos.service.ClienteService;
 import java.util.List;
 import java.util.Optional;
 
+@Controller
 @RestController
 @RequestMapping("/cliente")
 public class ClienteController {

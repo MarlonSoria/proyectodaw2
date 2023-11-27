@@ -17,7 +17,7 @@ import java.util.List;
 public class Mascota {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_mascota;
+    private Integer id_mascota;
 
     @Column(name = "nombre")
     private String nombre;

@@ -14,7 +14,7 @@ public class EspecialidadVet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_especialidad;
+    private Integer id_especialidad;
 
     @Column(name = "nom_especialidad")
     private String nom_Especialidad;

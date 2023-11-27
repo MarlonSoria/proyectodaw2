@@ -18,7 +18,7 @@ public class Boleta {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_boleta;
+    private Integer id_boleta;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(value = TemporalType.DATE)
