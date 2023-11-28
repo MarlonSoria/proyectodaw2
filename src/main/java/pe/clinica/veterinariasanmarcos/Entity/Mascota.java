@@ -37,10 +37,6 @@ public class Mascota {
     @Column(name = "Informacion")//AQUI SE DETALLA LA RAZA DE LA MASCOTA COMO INFORMACION ADICIONAL
     private String informacion;
 
-    @OneToMany(targetEntity = HistorialClinico.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_mascota")
-    private List<HistorialClinico> historialClinicoList;
-
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_cliente")
     private Cliente cliente;

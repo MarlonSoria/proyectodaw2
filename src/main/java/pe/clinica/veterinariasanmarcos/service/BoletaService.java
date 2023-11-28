@@ -16,7 +16,7 @@ public interface BoletaService {
 
     public void guardar(Boleta boleta);
 
-    public void actualizar( Integer id, Boleta boleta);
+    public void actualizar(Boleta boleta);
 
     public void eliminar(Integer id);
 

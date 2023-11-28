@@ -15,7 +15,7 @@ public interface TrabajadorService {
 
     public void guardar(Trabajador trabajador);
 
-    public void actualizar( Integer id, Trabajador trabajador);
+    public void actualizar(Trabajador trabajador);
 
     public void eliminar(Integer id);
 }

@@ -30,9 +30,14 @@ public class BoletaServiceImpl implements BoletaService {
     }
 
     @Override
-    public void actualizar(Integer id, Boleta boleta) {
-        bolRepo.findById(id).orElse(null);
-
+    public void actualizar(Boleta boleta) {
+        Boleta object = bolRepo.findById(boleta.getId_boleta()).get();
+        if (object != null) {
+            object.setFch_boleta(boleta.getFch_boleta());
+            object.setDetalleBolList(boleta.getDetalleBolList());
+            object.setMascota(boleta.getMascota());
+            bolRepo.save(object);
+        }
     }
 
     @Override

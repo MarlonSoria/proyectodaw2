@@ -32,8 +32,8 @@ public class ClienteServiceImpl implements ClienteService {
     }
 
     @Override
-    public void actualizar(Integer id, Cliente cliente) {
-        Cliente object = cliRepo.findById(id).get();
+    public void actualizar(Cliente cliente) {
+        Cliente object = cliRepo.findById(cliente.getId_cliente()).get();
         if (object != null) {
             object.setNombre(cliente.getNombre());
             object.setApellidos(cliente.getApellidos());

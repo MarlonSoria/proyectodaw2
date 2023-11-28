@@ -17,6 +17,7 @@ public class EspecialidadVet {
     private Integer id_especialidad;
 
     @Column(name = "nom_especialidad")
-    private String nom_Especialidad;
+    private String nom_especialidad;
+
 
 }

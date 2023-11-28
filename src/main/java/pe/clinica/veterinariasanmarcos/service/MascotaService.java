@@ -15,7 +15,7 @@ public interface MascotaService {
 
     public void guardar(Mascota mascota);
 
-    public void actualizar( Integer id, Mascota mascota);
+    public void actualizar(Mascota mascota);
 
     public void eliminar(Integer id);
 

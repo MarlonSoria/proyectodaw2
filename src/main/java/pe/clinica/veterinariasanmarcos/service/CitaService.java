@@ -16,7 +16,7 @@ public interface CitaService {
 
     public void guardar(Cita cita);
 
-    public void actualizar( Integer id, Cita cita);
+    public void actualizar(Cita cita);
 
     public void eliminar(Integer id);
 }

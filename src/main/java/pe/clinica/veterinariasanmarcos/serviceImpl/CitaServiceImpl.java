@@ -1,5 +1,6 @@
 package pe.clinica.veterinariasanmarcos.serviceImpl;
 
+import org.springframework.stereotype.Service;
 import pe.clinica.veterinariasanmarcos.Entity.Cita;
 import pe.clinica.veterinariasanmarcos.repository.CitaRepository;
 import pe.clinica.veterinariasanmarcos.service.CitaService;
@@ -7,6 +8,7 @@ import pe.clinica.veterinariasanmarcos.service.CitaService;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CitaServiceImpl implements CitaService {
 
     private CitaRepository citaRepo;
@@ -28,8 +30,15 @@ public class CitaServiceImpl implements CitaService {
     }
 
     @Override
-    public void actualizar(Integer id, Cita cita) {
-        citaRepo.findById(id).orElse(null);
+    public void actualizar(Cita cita) {
+        Cita object = citaRepo.findById(cita.getId_cita()).get();
+        if (object != null) {
+            object.setFch_Cita(cita.getFch_Cita());
+            object.setVeterinario(cita.getVeterinario());
+            object.setMascota(cita.getMascota());
+            object.setTrabajador(cita.getTrabajador());
+            citaRepo.save(object);
+        }
     }
 
     @Override

@@ -15,7 +15,7 @@ public interface VeterinarioService {
 
     public void guardar(Veterinario veterinario);
 
-    public void actualizar( Integer id, Veterinario veterinario);
+    public void actualizar(Veterinario veterinario);
 
     public void eliminar(Integer id);
 }

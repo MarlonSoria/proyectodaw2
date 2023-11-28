@@ -15,7 +15,7 @@ public interface EspecialidadVetService {
 
     public void guardar(EspecialidadVet especialidadVet);
 
-    public void actualizar( Integer id, EspecialidadVet especialidadVet);
+    public void actualizar(EspecialidadVet especialidadVet);
 
     public void eliminar(Integer id);
 }

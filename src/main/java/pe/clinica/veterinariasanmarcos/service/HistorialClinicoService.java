@@ -15,7 +15,7 @@ public interface HistorialClinicoService {
 
     public void guardar(HistorialClinico historialClinico);
 
-    public void actualizar( Integer id, HistorialClinico historialClinico);
+    public void actualizar(HistorialClinico historialClinico);
 
     public void eliminar(Integer id);
 

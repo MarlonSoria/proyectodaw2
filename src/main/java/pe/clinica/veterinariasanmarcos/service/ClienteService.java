@@ -15,7 +15,7 @@ public interface ClienteService {
 
     public void guardar(Cliente cliente);
 
-    public void actualizar( Integer id, Cliente cliente);
+    public void actualizar(Cliente cliente);
 
     public void eliminar(Integer id);
 

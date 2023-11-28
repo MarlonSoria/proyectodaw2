@@ -31,7 +31,7 @@ public class Veterinario {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(value = TemporalType.DATE)
     @Column(name = "fch_nacimiento")
-    private Date fch_Nacimiento;
+    private Date fch_nacimiento;
 
     @Column(name = "email")
     private String email;

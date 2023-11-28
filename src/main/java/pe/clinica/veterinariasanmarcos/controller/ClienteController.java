@@ -31,9 +31,9 @@ public class ClienteController {
         clienteService.guardar(cliente);
     }
 
-    @PutMapping("/actualizar/{id}")
-    public void actualizarCliente(@PathVariable Integer id,@RequestBody Cliente cliente) {
-        clienteService.actualizar(id, cliente);
+    @PutMapping("/actualizar")
+    public void actualizarCliente(@RequestBody Cliente cliente) {
+        clienteService.actualizar(cliente);
     }
 
     @DeleteMapping("/eliminar/{id}")

@@ -16,7 +16,7 @@ public interface DetalleBolService {
 
     public void guardar(DetalleBol detalleBol);
 
-    public void actualizar( Integer id, DetalleBol detalleBol);
+    public void actualizar(DetalleBol detalleBol);
 
     public void eliminar(Integer id);
 }

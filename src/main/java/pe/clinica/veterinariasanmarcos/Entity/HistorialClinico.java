@@ -35,4 +35,8 @@ public class HistorialClinico {
     @Temporal(value = TemporalType.DATE)
     @Column(name = "fecha")
     private Date fecha;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_mascota")
+    private Mascota mascota;
 }
