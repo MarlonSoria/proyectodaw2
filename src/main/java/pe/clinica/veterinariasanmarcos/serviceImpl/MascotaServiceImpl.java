@@ -36,7 +36,7 @@ public class MascotaServiceImpl implements MascotaService {
             object.setNombre(mascota.getNombre());
             object.setFch_nacimiento(mascota.getFch_nacimiento());
             object.setPeso(mascota.getPeso());
-            object.setTipoMascota(mascota.getTipoMascota());
+            object.setTipomascota(mascota.getTipomascota());
             object.setInformacion(mascota.getInformacion());
             object.setCliente(mascota.getCliente());
             masRepo.save(object);

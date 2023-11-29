@@ -32,7 +32,7 @@ public class Mascota {
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_tipomascota")
-    private TipoMascota tipoMascota;
+    private TipoMascota tipomascota;
 
     @Column(name = "informacion")//AQUI SE DETALLA LA RAZA DE LA MASCOTA COMO INFORMACION ADICIONAL
     private String informacion;
