@@ -41,9 +41,9 @@ public class HistorialClinicoServicesImpl implements HistorialClinicoService{
 		HistorialClinico object = historepo.findById(historialClinico.getId_historialclinico()).get();
         if (object != null) {
             object.setDescripcion(historialClinico.getDescripcion());
-            object.setResult_examenes(historialClinico.getResult_examenes());
-            object.setTratamientos(historialClinico.getTratamientos());
-            object.setObservaciones(historialClinico.getObservaciones());
+            object.setResult_examen(historialClinico.getResult_examen());
+            object.setTratamiento(historialClinico.getTratamiento());
+            object.setObservacion(historialClinico.getObservacion());
             object.setFecha(historialClinico.getFecha());            
             historepo.save(object);
         }

@@ -9,14 +9,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="tb_tipo_mascota")
+@Table(name="tb_tipomascota")
 public class TipoMascota {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id_tipomascota;
 
     @Column(name = "nom_tipo")
-    private String tipo;
+    private String nom_tipo;
 
 
 }

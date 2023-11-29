@@ -21,7 +21,7 @@ public class Cita {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(value = TemporalType.DATE)
     @Column(name = "fch_cita")
-    private Date fch_Cita;
+    private Date fch_cita;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_veterinario")

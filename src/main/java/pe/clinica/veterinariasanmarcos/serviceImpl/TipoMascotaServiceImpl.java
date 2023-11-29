@@ -33,7 +33,7 @@ public class TipoMascotaServiceImpl implements TipoMascotaService {
     public void actualizar(TipoMascota tipoMascota) {
         TipoMascota object = repository.findById(tipoMascota.getId_tipomascota()).get();
         if (object != null) {
-            object.setTipo(tipoMascota.getTipo());
+            object.setNom_tipo(tipoMascota.getNom_tipo());
             repository.save(object);
         }
     }

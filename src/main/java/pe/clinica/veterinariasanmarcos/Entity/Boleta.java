@@ -22,8 +22,8 @@ public class Boleta {
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(value = TemporalType.DATE)
-    @Column(name = "fecha")
-    private Date fch_boleta;
+    @Column(name = "fechabol")
+    private Date fechabol;
 
     @OneToMany(targetEntity = DetalleBol.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "id_boleta")

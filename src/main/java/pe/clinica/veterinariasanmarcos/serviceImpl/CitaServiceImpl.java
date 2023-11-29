@@ -33,7 +33,7 @@ public class CitaServiceImpl implements CitaService {
     public void actualizar(Cita cita) {
         Cita object = citaRepo.findById(cita.getId_cita()).get();
         if (object != null) {
-            object.setFch_Cita(cita.getFch_Cita());
+            object.setFch_cita(cita.getFch_cita());
             object.setVeterinario(cita.getVeterinario());
             object.setMascota(cita.getMascota());
             object.setTrabajador(cita.getTrabajador());

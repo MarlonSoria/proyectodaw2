@@ -22,14 +22,14 @@ public class HistorialClinico {
     @Column(name = "descripcion")
     private String descripcion;
 
-    @Column(name = "result_exam")
-    private String result_examenes;
+    @Column(name = "result_examen")
+    private String result_examen;
 
     @Column(name = "tratamiento")
-    private String tratamientos;
+    private String tratamiento;
 
-    @Column(name = "observaciones")
-    private String observaciones;
+    @Column(name = "observacion")
+    private String observacion;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(value = TemporalType.DATE)

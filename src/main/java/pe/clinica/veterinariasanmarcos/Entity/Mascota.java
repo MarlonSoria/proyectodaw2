@@ -25,7 +25,7 @@ public class Mascota {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(value = TemporalType.DATE)
     @Column(name = "fch_nacimiento")
-    private Date fch_Nacimiento;
+    private Date fch_nacimiento;
 
     @Column(name = "peso")
     private Double peso;
@@ -34,7 +34,7 @@ public class Mascota {
     @JoinColumn(name = "id_tipomascota")
     private TipoMascota tipoMascota;
 
-    @Column(name = "Informacion")//AQUI SE DETALLA LA RAZA DE LA MASCOTA COMO INFORMACION ADICIONAL
+    @Column(name = "informacion")//AQUI SE DETALLA LA RAZA DE LA MASCOTA COMO INFORMACION ADICIONAL
     private String informacion;
 
     @ManyToOne(optional = false)
